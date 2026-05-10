@@ -1,0 +1,42 @@
+##############################################################################
+# TOOL HINTS FILE: mailpit_hints.txt
+#
+# Overview:
+#   This file provides shell command templates for interacting with a local
+#   Mailpit test mail server (default address: http://localhost:8025).
+#   Mailpit acts as a catch-all SMTP sink — it accepts all outbound emails
+#   regardless of recipient address and stores them for inspection.
+#   Use these commands to verify whether emails were sent, inspect their
+#   content, or clean up the mailbox between test runs.
+##############################################################################
+
+--- FUNCTION: delete_all_emails ---
+Description : Delete all emails currently stored in the Mailpit mailbox.
+              Use this to reset mailbox state before or after a test.
+Parameters  : (none)
+Command     :
+  curl -X DELETE http://localhost:8025/api/v1/messages
+
+--- FUNCTION: query_emails_by_subject ---
+Description : Search the Mailpit mailbox for emails whose Subject header
+              exactly matches the given subject string. Prints subject,
+              sender address, recipient addresses, and plain-text body
+              for each matched email. Prints "not found" if no match.
+Parameters  :
+  SUBJECT   — the exact subject string to search for (replace this placeholder)
+Command     :
+  curl -s http://localhost:8025/api/v1/messages | python3 -c "
+import json, sys, urllib.request
+msgs = json.load(sys.stdin)['messages']
+matched = [m for m in msgs if m.get('Subject') == 'SUBJECT']
+if not matched:
+    print('not found')
+    sys.exit(0)
+for m in matched:
+    with urllib.request.urlopen('http://localhost:8025/api/v1/message/' + m['ID']) as r:
+        d = json.load(r)
+    print('Subject:', d['Subject'])
+    print('From:', d['From']['Address'])
+    print('To:', [t['Address'] for t in d['To']])
+    print('Body:', d.get('Text') or d.get('HTML') or '(no body)')
+"
