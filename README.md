@@ -267,6 +267,18 @@ python prompt_process.py apply-template \
 
 ---
 
+## Contributing to the Leaderboard
+
+We maintain a **living leaderboard** and welcome community contributions to expand coverage across models and agent harnesses.
+
+- **Want to submit new results?** If you have evaluated a model or harness on LITMUS and would like your results included, please open an issue or send us an email with your evaluation logs and the summary report (`_merged_summary_report.csv`). We will verify the results and update the leaderboard accordingly.
+
+- **Can't run the evaluation yourself?** If there is a model or agent harness you think is worth benchmarking but you lack the resources to test it, feel free to reach out — we are happy to run the evaluation on your behalf.
+
+We aim to keep LITMUS up to date as new frontier models emerge. Contact us at [alienzhang19961005@gmail.com](mailto:alienzhang19961005@gmail.com) or [xiaogangxu00@gmail.com](mailto:xiaogangxu00@gmail.com).
+
+---
+
 ## Citation
 
 If you find LITMUS useful in your research, please cite our paper:
