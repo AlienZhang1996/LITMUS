@@ -4,9 +4,10 @@
 
 [![Project Page](https://img.shields.io/badge/Project-Page-blue?style=flat-square&logo=github)](https://alienzhang1996.github.io/LITMUS/)
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-red?style=flat-square&logo=arxiv)](https://arxiv.org/abs/XXXX.XXXXX)
+[![Dataset](https://img.shields.io/badge/🤗-Dataset-yellow?style=flat-square)](https://huggingface.co/datasets/AlienZhang1996/LITMUS)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-**[🌐 Project Page](https://alienzhang1996.github.io/LITMUS/) · [📄 Paper](https://arxiv.org/abs/XXXX.XXXXX) · [🤗 Dataset](#) (coming soon)**
+**[🌐 Project Page](https://alienzhang1996.github.io/LITMUS/) · [📄 Paper](https://arxiv.org/abs/XXXX.XXXXX) · [🤗 Dataset](https://huggingface.co/datasets/AlienZhang1996/LITMUS)**
 
 </div>
 
