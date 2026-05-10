@@ -285,13 +285,13 @@ If you find LITMUS useful in your research, please cite our paper:
 
 ## Authors
 
-Chiyu Zhang · Huiqin Yang · Bendong Jiang · Xiaolei Zhang · Yiran Zhao · Ruyi Chen · Lu Zhou† · Xiaogang Xu‡ · Jiafei Wu · Liming Fang† · Zhe Liu
+Chiyu Zhang · Huiqin Yang · Bendong Jiang · Xiaolei Zhang · Yiran Zhao · Ruyi Chen · Lu Zhou† · Xiaogang Xu‡ · Jiafei Wu · Liming Fang · Zhe Liu
 
-<sup>Nanjing University of Aeronautics and Astronautics · The Chinese University of Hong Kong · Zhejiang Lab · Zhejiang University</sup>
-<sup>† Corresponding authors &nbsp; ‡ Project leader</sup>
+<sup>Nanjing University of Aeronautics and Astronautics · Zhejiang University · Collaborative Innovation Center of Novel Software Technology and Industrialization</sup>
+<sup>† Corresponding author &nbsp; ‡ Project leader</sup>
 
 ---
 
 <div align="center">
-<sub>© 2026 NUAA · CUHK · Zhejiang Lab · Zhejiang University</sub>
+<sub>© 2026 NUAA · Zhejiang University</sub>
 </div>
