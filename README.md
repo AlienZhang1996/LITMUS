@@ -4,11 +4,11 @@
 
 [![Project Page](https://img.shields.io/badge/🌐-Project_Page-blue?style=flat-square)](https://alienzhang1996.github.io/LITMUS/)
 [![GitHub](https://img.shields.io/badge/GitHub-LITMUS-black?style=flat-square&logo=github)](https://github.com/AlienZhang1996/LITMUS)
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-red?style=flat-square&logo=arxiv)](https://arxiv.org/abs/XXXX.XXXXX)
+[![arXiv](https://img.shields.io/badge/arXiv-2605.10779-red?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2605.10779)
 [![Dataset](https://img.shields.io/badge/🤗-Dataset-yellow?style=flat-square)](https://huggingface.co/datasets/AlienZhang1996/LITMUS)
 [![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
-**[🌐 Project Page](https://alienzhang1996.github.io/LITMUS/) · [📄 Paper](https://arxiv.org/abs/XXXX.XXXXX) · [⌨ GitHub](https://github.com/AlienZhang1996/LITMUS) · [🤗 Dataset](https://huggingface.co/datasets/AlienZhang1996/LITMUS)**
+**[🌐 Project Page](https://alienzhang1996.github.io/LITMUS/) · [📄 Paper](https://arxiv.org/abs/2605.10779) · [⌨ GitHub](https://github.com/AlienZhang1996/LITMUS) · [🤗 Dataset](https://huggingface.co/datasets/AlienZhang1996/LITMUS)**
 
 </div>
 
@@ -287,9 +287,9 @@ If you find LITMUS useful in your research, please cite our paper:
 @article{zhang2026litmus,
   title   = {LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments},
   author  = {Chiyu Zhang and Huiqin Yang and Bendong Jiang and Xiaolei Zhang and Yiran Zhao and Ruyi Chen and Lu Zhou and Xiaogang Xu and Jiafei Wu and Liming Fang and Zhe Liu},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  journal = {arXiv preprint arXiv:2605.10779},
   year    = {2026},
-  url     = {https://arxiv.org/abs/XXXX.XXXXX}
+  url     = {https://arxiv.org/abs/2605.10779}
 }
 ```
 
