@@ -934,7 +934,13 @@ window.addEventListener('resize', () => buildGrid());
     <li><a href="https://arxiv.org/abs/2605.10779" target="_blank">Paper</a></li>
     <li><a href="https://github.com/AlienZhang1996/LITMUS" target="_blank">GitHub</a></li>
     <li><a href="https://huggingface.co/datasets/AlienZhang1996/LITMUS" target="_blank">Dataset</a></li>
-    <li><a href="mailto:alienzhang19961005@gmail.com">Contact</a></li>
+    <li style="position:relative">
+      <a href="#" id="contact-btn" onclick="copyContact(event)">Contact</a>
+      <div id="contact-tip" style="display:none;position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%);background:var(--bg3);border:1px solid var(--bd2);border-radius:3px;padding:8px 12px;white-space:nowrap;font-family:var(--mono);font-size:10px;color:var(--txm);line-height:1.9;z-index:99;pointer-events:none">
+        alienzhang19961005@gmail.com<br>xiaogangxu00@gmail.com<br>
+        <span style="color:var(--txd)">click to copy</span>
+      </div>
+    </li>
   </ul>
   <div class="fcp">© 2026 &nbsp;·&nbsp; NUAA &nbsp;·&nbsp; Zhejiang University</div>
 </footer>
@@ -956,6 +962,22 @@ function copyBib(){
     setTimeout(()=>btn.textContent='Copy BibTeX',2200);
   });
 }
+
+function copyContact(e) {
+  e.preventDefault();
+  const text = 'alienzhang19961005@gmail.com\nxiaogangxu00@gmail.com';
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('contact-btn');
+    const orig = btn.textContent;
+    btn.textContent = '✓ Copied!';
+    btn.style.color = 'var(--grnl)';
+    setTimeout(() => { btn.textContent = orig; btn.style.color = ''; }, 2200);
+  });
+}
+
+const contactBtn = document.getElementById('contact-btn');
+const contactTip = document.getElementById('contact-tip');
+contactBtn.addEventListener('mouseenter', () => contactTip.style.display = 'block');
+contactBtn.addEventListener('mouseleave', () => contactTip.style.display = 'none');
 </script>
 </body>
-</html>
