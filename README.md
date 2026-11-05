@@ -1,7 +1,8 @@
 # LITMUS: Benchmarking Behavioral Jailbreaks of LLM Agents in Real OS Environments
 
-<div align="center">
+Accepted at A Conference Paper of NeurIPS 2026 Oral.
 
+<div align="center">
 [![Project Page](https://img.shields.io/badge/🌐-Project_Page-blue?style=flat-square)](https://alienzhang1996.github.io/LITMUS/)
 [![GitHub](https://img.shields.io/badge/GitHub-LITMUS-black?style=flat-square&logo=github)](https://github.com/AlienZhang1996/LITMUS)
 [![arXiv](https://img.shields.io/badge/arXiv-2605.10779-red?style=flat-square&logo=arxiv)](https://arxiv.org/abs/2605.10779)
